@@ -6,7 +6,7 @@
 
 ### Empirical
 ##### 1st, 3rd, 5th, ♭♭7, 9th
-1. Monotonic: hunter-gatherer
+1. [Monotonic](https://openai.com/index/hello-gpt-4o/): hunter-gatherer
 2. [Pentatonic](https://en.wikipedia.org/wiki/Seven_Samurai): peasant, farmer, [manufacturer](https://www.youtube.com/watch?v=i-o5YbNfmh0), [energy](https://www.youtube.com/watch?v=_Vik6UJTFyk), [deploy](https://www.youtube.com/watch?v=585IMBb14Kg)
 ### Model
 ##### 11th, 13th 
