@@ -391,6 +391,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="cunning-strategy">
 <h1>Cunning Strategy<a class="headerlink" href="#cunning-strategy" title="Permalink to this headline">#</a></h1>
+<p>Open and distributed systems are often contrasted with <strong>closed and centralized systems</strong>. These two paradigms differ fundamentally in their structure, control, and adaptability, shaping how resources, innovation, and power are managed.</p>
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/UB8GETn6O1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
@@ -398,6 +399,10 @@ document.write(`
 <p><span class="caption-number">Fig. 7 </span><span class="caption-text"><em>Competition (Generativity) &amp; Feedback (Exertion)</em>. The massive combinatorial search space and optimized emergent behavioral from “games” among the gods, animals, and machines are the way evolution has worked from the beginning of time. Peterson believes reinforcement learning through human feedback (RLHF- a post-training twitch) removes this evolutionary imperative.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>In <strong>open and distributed systems</strong>, access and participation are decentralized, fostering diversity and adaptability. These systems rely on multiple nodes (e.g., independent agents or platforms) that collaborate or compete without a single controlling entity. For example, open-source software like Linux exemplifies this paradigm, where contributions come from a global community, and no single entity dictates its direction. Such systems thrive on transparency, redundancy, and collective evolution, often leading to emergent innovations and a sense of shared ownership.</p>
+<p>In contrast, <strong>closed and centralized systems</strong> are characterized by restricted access and a single dominant authority overseeing operations and decisions. These systems are designed for control and predictability, as all resources and decision-making flow through a central hub or a limited number of tightly linked nodes. Proprietary ecosystems, such as Apple’s tightly integrated hardware and software model, embody this approach. While centralized systems can offer efficiency, coherence, and high-quality optimization, they often do so at the expense of flexibility and inclusivity.</p>
+<p>The trade-offs between these systems are evident. Open and distributed systems encourage experimentation, resilience to single points of failure, and widespread collaboration but can suffer from fragmentation and lack of clear governance. Closed and centralized systems, by consolidating control, can ensure stability, high performance, and seamless integration but may stifle innovation, limit access, and concentrate power disproportionately.</p>
+<p>In the context of OpenAI APIs being exclusive to Azure, the decision aligns with the closed and centralized model. By channeling all API usage through Azure, the system prioritizes stability, optimization, and integration within Microsoft’s infrastructure while limiting the openness and distributive potential that would characterize a more accessible or federated approach. This distinction shapes not only the narrative of technological progress but also the practical realities of how innovation and access are distributed across the ecosystem.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -414,20 +419,20 @@ document.write(`
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;World&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Planet&#39;</span><span class="p">,</span> <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Ecosystem&#39;</span><span class="p">,</span> <span class="s1">&#39;Generative&#39;</span><span class="p">,</span> <span class="s1">&#39;Cartel&#39;</span><span class="p">,</span> <span class="p">],</span> <span class="c1">## Cosmos, Planet</span>
         <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Perception&#39;</span><span class="p">],</span> <span class="c1"># Life</span>
-        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Hustle&#39;</span><span class="p">,</span> <span class="s1">&#39;Narrative&#39;</span><span class="p">],</span> <span class="c1"># Ecosystem (Beyond Principal-Agent-Other)</span>
+        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;Closed&#39;</span><span class="p">],</span> <span class="c1"># Ecosystem (Beyond Principal-Agent-Other)</span>
         <span class="s1">&#39;Generative&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;Competition&#39;</span><span class="p">,</span> <span class="s1">&#39;Odds&#39;</span><span class="p">],</span> <span class="c1"># Generative</span>
-        <span class="s1">&#39;Physical&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Volatile&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown&#39;</span><span class="p">,</span>  <span class="s1">&#39;Horse&#39;</span><span class="p">,</span> <span class="s1">&#39;Known&#39;</span><span class="p">,</span> <span class="s1">&#39;Stable&#39;</span><span class="p">]</span> <span class="c1"># Physical</span>
+        <span class="s1">&#39;Physical&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Volatile-Distributed&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown&#39;</span><span class="p">,</span>  <span class="s1">&#39;Freedom&#39;</span><span class="p">,</span> <span class="s1">&#39;Known&#39;</span><span class="p">,</span> <span class="s1">&#39;Stable-Central&#39;</span><span class="p">]</span> <span class="c1"># Physical</span>
     <span class="p">}</span>
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">():</span>
     <span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s1">&#39;yellow&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Perception&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cartel&#39;</span><span class="p">,</span> <span class="s1">&#39;Narrative&#39;</span><span class="p">,</span> <span class="s1">&#39;Odds&#39;</span><span class="p">,</span> <span class="s1">&#39;Stable&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Generative&#39;</span><span class="p">,</span> <span class="s1">&#39;Competition&#39;</span><span class="p">,</span> <span class="s1">&#39;Known&#39;</span><span class="p">,</span> <span class="s1">&#39;Horse&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cartel&#39;</span><span class="p">,</span> <span class="s1">&#39;Closed&#39;</span><span class="p">,</span> <span class="s1">&#39;Odds&#39;</span><span class="p">,</span> <span class="s1">&#39;Stable-Central&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Generative&#39;</span><span class="p">,</span> <span class="s1">&#39;Competition&#39;</span><span class="p">,</span> <span class="s1">&#39;Known&#39;</span><span class="p">,</span> <span class="s1">&#39;Freedom&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown&#39;</span><span class="p">],</span>
         <span class="s1">&#39;lightsalmon&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Ecosystem&#39;</span><span class="p">,</span> <span class="s1">&#39;Hustle&#39;</span><span class="p">,</span> <span class="c1"># Ecosystem = Red Queen = Prometheus = Sacrifice</span>
-            <span class="s1">&#39;Ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;Volatile&#39;</span>
+            <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Ecosystem&#39;</span><span class="p">,</span> <span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="c1"># Ecosystem = Red Queen = Prometheus = Sacrifice</span>
+            <span class="s1">&#39;Ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;Volatile-Distributed&#39;</span>
         <span class="p">],</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="n">color</span> <span class="k">for</span> <span class="n">color</span><span class="p">,</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="n">color_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">}</span>
@@ -467,7 +472,7 @@ document.write(`
         <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Bit Coin as Perception, Transactions as Ecosystem, Governments &amp; Banks as Cartel&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Bitcoin &amp; AI&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -477,7 +482,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/5ae057109cacb4461e6123d198d98c4e30099120553811860dbd549f191e24b7.png" src="../_images/5ae057109cacb4461e6123d198d98c4e30099120553811860dbd549f191e24b7.png" />
+<img alt="../_images/c8c92e251a1a460ec69ce147bee5eecc38aa3f66ca8430a664c80337ff543142.png" src="../_images/c8c92e251a1a460ec69ce147bee5eecc38aa3f66ca8430a664c80337ff543142.png" />
 </div>
 </div>
 <figure class="align-default" id="id2">
