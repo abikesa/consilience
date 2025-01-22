@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Risk &#8212; Consilience</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act2/chapter3';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Operational" href="../act3/part3.html" />
+    <link rel="prev" title="Engineering" href="chapter2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://images.squarespace-cdn.com/content/v1/5a6d50d8017db24a060f8977/1518500481830-TW3S3GNRVGZXU913NW2X/ConsilienceLogo.png?format=750w" class="logo__image only-light" alt="Consilience - Home"/>
+    <script>document.write(`<img src="https://images.squarespace-cdn.com/content/v1/5a6d50d8017db24a060f8977/1518500481830-TW3S3GNRVGZXU913NW2X/ConsilienceLogo.png?format=750w" class="logo__image only-dark" alt="Consilience - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Tactical
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act1/part1.html">Informational</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter1.html">Referral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter2.html">Screening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../act1/chapter3.html">Eligibility</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="part2.html">Strategic</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">Principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">Agent</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Risk</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../act3/part3.html">Operational</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act1.html">Literature 🌊</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_1.html">Cosmic</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_2.html">Uncertainty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part1/part1_3.html">Failure</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act2.html">Personalize ⚓️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_1.html">Base</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_2.html">Risk</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part2/part2_3.html">Student ☔️</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3/act3.html">Update 🧭</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_1.html">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_2.html">Transformation</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../act3/part3/part3_3.html">Feedback</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../bibliography.html">Existential</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act2/chapter3.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/act2/chapter3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Risk</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Risk</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-five-layers-of-judgment-a-sequel-to-the-hidden-interactions">The Five Layers of Judgment: A Sequel to the Hidden Interactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#foundation-of-the-world"><strong>1. Foundation of the World</strong> 🌍</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inherit-the-kingdom-of-god"><strong>2. Inherit the Kingdom of God</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goats-left-vs-sheep-right"><strong>3. Goats (Left) 🐐 vs. Sheep (Right)</strong> 🐑</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-i-was-a-commensal-by-thy-deeds"><strong>4. For I Was a Commensal by Thy Deeds</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#everlasting-fire-vs-kingdom-prepd"><strong>5. Everlasting Fire 🔥 vs. Kingdom Prep’d</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="risk">
+<span id="id1"></span><h1>Risk<a class="headerlink" href="#risk" title="Permalink to this heading">#</a></h1>
+<section id="the-five-layers-of-judgment-a-sequel-to-the-hidden-interactions">
+<h2>The Five Layers of Judgment: A Sequel to the Hidden Interactions<a class="headerlink" href="#the-five-layers-of-judgment-a-sequel-to-the-hidden-interactions" title="Permalink to this heading">#</a></h2>
+<p>The passage from Matthew 25:31–40 reveals a layered tapestry of divine judgment, human behavior, and the moral architecture of the world. When viewed through the lens of the neural network—spanning the foundational world, worldview, perception, hidden combinatorial space, and optimized outcomes—the parable of the sheep and goats becomes a profound allegory for human agency and the eternal interplay between cooperation, iteration, and adversarial dynamics.</p>
+<hr class="docutils" />
+<section id="foundation-of-the-world">
+<h3><strong>1. Foundation of the World</strong> 🌍<a class="headerlink" href="#foundation-of-the-world" title="Permalink to this heading">#</a></h3>
+<p><em>“Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world.”</em></p>
+<p>At the first layer, we encounter the foundational world—a pre-input stage where the immutable laws of existence and divine justice were set in place. The phrase “foundation of the world” evokes a sense of timelessness, suggesting that the moral fabric underpinning this judgment was woven into the cosmos itself. This is the layer of creation, where the cosmos, earth, and life emerge as raw inputs into the vast system of divine interaction. Here, the sheep and goats are not yet separated but coexist within the potentiality of the world’s structure, mirroring the latent states of any neural network awaiting activation.</p>
+<p>In this foundational space, the wilderness plays a dual role as both chaos and potential. The wilderness, where the scapegoat is exiled in Leviticus 16, represents the unstructured combinatorial field that serves as the foundation for iterative trials. The sheep graze in harmony, embodying a cooperative alignment with this foundational order, while the goats roam unpredictably, testing the boundaries of creation. It is in this layer that coffee, symbolically and literally, exists as an undiscovered treasure—a resource awaiting its moment of emergence.</p>
+<hr class="docutils" />
+<p><em>We provide that guidance</em><br />
+– Navigare, Die Zauberflöte, The Rug, Rosebud, Yellowstone</p>
+<iframe width="100%" height="500px;" src="https://www.youtube.com/embed/IYUoANr3cMo?start=300" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text"><em>Trump—Flanked By Larry Ellison, Sam Altman, &amp; Masayoshi Son—Announces Project Stargate</em>. President Trump, flanked by top tech executives and AI experts, announces a major new AI initiative called Project Stargate. Our App provides infrastructure that connects this to the academic medicines workflows</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="inherit-the-kingdom-of-god">
+<h3><strong>2. Inherit the Kingdom of God</strong><a class="headerlink" href="#inherit-the-kingdom-of-god" title="Permalink to this heading">#</a></h3>
+<p><em>“Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you.”</em></p>
+<p>The second layer reflects <strong>worldview</strong>, a perceptual frame that divides the sheep from the goats. To inherit the kingdom is to align one’s actions with a divine perspective—a worldview governed by humility, service, and the prioritization of others over self. The worldview acts as a filter, channeling the foundational world into agentic choices. The sheep, with their cooperative nature, naturally align with this kingdom perspective. Their worldview is relational and empathetic, rooted in the recognition of others’ needs.</p>
+<p>The goats, by contrast, operate from an adversarial worldview, driven by self-interest and independence. They are not inherently wicked but fail to recognize the relational ties that bind the world together. Their worldview is narrower, focused on individual survival rather than communal flourishing. This division reflects the neural network’s processing of sensory inputs into structured perceptions, where worldview determines how raw data from the world is interpreted and acted upon.</p>
+</section>
+<hr class="docutils" />
+<section id="goats-left-vs-sheep-right">
+<h3><strong>3. Goats (Left) 🐐 vs. Sheep (Right)</strong> 🐑<a class="headerlink" href="#goats-left-vs-sheep-right" title="Permalink to this heading">#</a></h3>
+<p><em>“And he shall set the sheep on his right hand, but the goats on the left.”</em></p>
+<p>At the third layer, <strong>perception becomes agentic</strong>. The sheep and goats, representing cooperative and adversarial behaviors, are sorted into distinct outputs based on their actions. This layer corresponds to the neural network’s input nodes—processing and weighing signals to determine how they align with the hidden dynamics of the system.</p>
+<p>The sorting of sheep and goats is not arbitrary; it is the outcome of accumulated choices and behaviors. The sheep’s acts of kindness—feeding the hungry, clothing the naked, visiting the sick—demonstrate an agentic alignment with the kingdom’s values. The goats, by neglecting these same acts, reveal a disconnection from the cooperative equilibria necessary for divine harmony. Yet even in their separation, the goats serve a purpose. Their adversarial nature pushes the boundaries of the system, testing its resilience and refining its processes through iteration.</p>
+<p>This dynamic mirrors the discovery of coffee by an itinerant goat. The goat’s restless exploration, while seemingly chaotic, led to the uncovering of something transformative. Similarly, in human systems, the adversarial forces represented by the goats are necessary to catalyze growth and adaptation, even as they are ultimately separated from the cooperative harmony of the sheep.</p>
+<hr class="docutils" />
+<iframe width="100%" height="500px;" src="https://www.youtube.com/embed/r3_41Whvr1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">The numbers in private equity don’t add up because its very much like a betting in a horse race. Too many entrants and exits for anyone to have a reliable dataset with which to estimate odds for any horse-jokey vs. the others for quinella, trifecta, superfecta</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="for-i-was-a-commensal-by-thy-deeds">
+<h3><strong>4. For I Was a Commensal by Thy Deeds</strong><a class="headerlink" href="#for-i-was-a-commensal-by-thy-deeds" title="Permalink to this heading">#</a></h3>
+<p><em>“For I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink.”</em></p>
+<p>The hidden layer represents the <strong>combinatorial space</strong> where deeds are weighed, intentions are discerned, and outcomes are optimized. The phrase “I was a commensal by thy deeds” encapsulates this dynamic. In biology, a commensal relationship is one where one party benefits while the other is unaffected. Yet in this parable, Jesus reframes commensalism as a moral obligation: those who act with compassion toward the least of these elevate both the recipient and themselves. The hidden layer transforms transactional interactions into a symbiotic relationship that benefits the entire system.</p>
+<p>In this space, the actions of the sheep are not merely individual acts of kindness but part of a broader network of mutual flourishing. The goats, in failing to recognize their commensal responsibility, disrupt this balance. The hidden layer thus becomes the realm of divine judgment, where deeds are not only recorded but also amplified, iterated upon, and fed back into the system to shape future interactions.</p>
+</section>
+<hr class="docutils" />
+<section id="everlasting-fire-vs-kingdom-prepd">
+<h3><strong>5. Everlasting Fire 🔥 vs. Kingdom Prep’d</strong><a class="headerlink" href="#everlasting-fire-vs-kingdom-prepd" title="Permalink to this heading">#</a></h3>
+<p><em>“And these shall go away into everlasting punishment: but the righteous into life eternal.”</em></p>
+<p>The fifth layer is the <strong>optimization of outputs</strong>, where the system reaches its final state. This is the layer of eternal consequences: the “everlasting fire” prepared for the adversarial forces versus the “kingdom prepared” for the cooperative. Here, the network resolves its computations, assigning each node to its optimal end based on its alignment with the system’s values.</p>
+<p>The fire is not merely punishment but a necessary clearing of adversarial disruptions, a purging of elements that fail to harmonize with the system’s goals. The kingdom, by contrast, represents the ultimate optimization of cooperative and iterative dynamics, a state of eternal flourishing where every interaction contributes to the whole. The sheep inherit this kingdom not because they are perfect but because their actions align with the system’s hidden layer, optimizing for mutual benefit and divine purpose.</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="conclusion">
+<h2><strong>Conclusion</strong><a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>The interplay of these five layers—from the foundation of the world to the optimization of eternal outcomes—reveals the profound depth of Matthew 25:31–40. The parable of the sheep and goats is more than a story of judgment; it is a blueprint for understanding the hidden dynamics of human behavior. Through the lens of the neural network, it becomes clear that the cooperative, iterative, and adversarial forces at play are not merely moral categories but essential elements of a system designed to optimize for growth, harmony, and discovery.</p>
+<p>Like the itinerant goat that led us to coffee, it is through exploration, trial, and error that humanity uncovers the treasures hidden within the vast combinatorial spaces of existence. And like the sheep who graze in peace, it is through cooperation and care for others that we align ourselves with the kingdom prepared from the foundation of the world. Together, these dynamics create a system that, while imperfect and often chaotic, ultimately strives for a state of eternal balance and flourishing.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># Define the neural network structure</span>
+<span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;World&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Sacrifice&#39;</span><span class="p">,</span> <span class="s1">&#39;Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Ends&#39;</span><span class="p">,</span> <span class="p">],</span>
+        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Parents&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Street&#39;</span><span class="p">,</span> <span class="s1">&#39;Education&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Parasitism&#39;</span><span class="p">,</span> <span class="s1">&#39;Network&#39;</span><span class="p">,</span> <span class="s1">&#39;Commensalism&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Offense&#39;</span><span class="p">,</span> <span class="s1">&#39;Lethality&#39;</span><span class="p">,</span>  <span class="s1">&#39;Self-Belief&#39;</span><span class="p">,</span> <span class="s1">&#39;Immunity&#39;</span><span class="p">,</span> <span class="s1">&#39;Defense&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+
+<span class="c1"># Assign colors to nodes</span>
+<span class="k">def</span> <span class="nf">assign_colors</span><span class="p">():</span>
+    <span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;yellow&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Parents&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ends&#39;</span><span class="p">,</span> <span class="s1">&#39;Education&#39;</span><span class="p">,</span> <span class="s1">&#39;Commensalism&#39;</span><span class="p">,</span> <span class="s1">&#39;Defense&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Network&#39;</span><span class="p">,</span> <span class="s1">&#39;Immunity&#39;</span><span class="p">,</span> <span class="s1">&#39;Self-Belief&#39;</span><span class="p">,</span> <span class="s1">&#39;Lethality&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;lightsalmon&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Sacrifice&#39;</span><span class="p">,</span> <span class="s1">&#39;Street&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Parasitism&#39;</span><span class="p">,</span> <span class="s1">&#39;Offense&#39;</span>
+        <span class="p">],</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="n">color</span> <span class="k">for</span> <span class="n">color</span><span class="p">,</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="n">color_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">}</span>
+
+<span class="c1"># Calculate positions for nodes</span>
+<span class="k">def</span> <span class="nf">calculate_positions</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="n">x_offset</span><span class="p">):</span>
+    <span class="n">y_positions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">))</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">x_offset</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">y_positions</span><span class="p">]</span>
+
+<span class="c1"># Create and visualize the neural network graph</span>
+<span class="k">def</span> <span class="nf">visualize_nn</span><span class="p">():</span>
+    <span class="n">layers</span> <span class="o">=</span> <span class="n">define_layers</span><span class="p">()</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">assign_colors</span><span class="p">()</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node_colors</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Add nodes and assign positions</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">nodes</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">positions</span> <span class="o">=</span> <span class="n">calculate_positions</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">x_offset</span><span class="o">=</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">positions</span><span class="p">):</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">pos</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="n">position</span>
+            <span class="n">node_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">colors</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">&#39;lightgray&#39;</span><span class="p">))</span>  <span class="c1"># Default color fallback</span>
+
+    <span class="c1"># Add edges (automated for consecutive layers)</span>
+    <span class="n">layer_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">layer_names</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">source_layer</span><span class="p">,</span> <span class="n">target_layer</span> <span class="o">=</span> <span class="n">layer_names</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">layer_names</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">source_layer</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">target_layer</span><span class="p">]:</span>
+                <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+
+    <span class="c1"># Draw the graph</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span>
+        <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
+        <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
+    <span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tip to Mars&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Run the visualization</span>
+<span class="n">visualize_nn</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/65435210da44421b8149ec22b8962bda75a00f7841450ec0ef938e4dfa27c06d.png" src="../_images/65435210da44421b8149ec22b8962bda75a00f7841450ec0ef938e4dfa27c06d.png" />
+</div>
+</div>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text"><em>Change of Guards</em>. In  Grand Illusion, Renoir was dealing the final blow to the Ancién Régime. And in Rules of the Game, he was hinting at another change of guards, from agentic mankind to one in a mutualistic bind with machines (unsupervised pianos &amp; supervised airplanes). How priscient!</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Engineering</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../act3/part3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Operational</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Risk</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-five-layers-of-judgment-a-sequel-to-the-hidden-interactions">The Five Layers of Judgment: A Sequel to the Hidden Interactions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#foundation-of-the-world"><strong>1. Foundation of the World</strong> 🌍</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inherit-the-kingdom-of-god"><strong>2. Inherit the Kingdom of God</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goats-left-vs-sheep-right"><strong>3. Goats (Left) 🐐 vs. Sheep (Right)</strong> 🐑</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-i-was-a-commensal-by-thy-deeds"><strong>4. For I Was a Commensal by Thy Deeds</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#everlasting-fire-vs-kingdom-prepd"><strong>5. Everlasting Fire 🔥 vs. Kingdom Prep’d</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusion</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 Zeus
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
