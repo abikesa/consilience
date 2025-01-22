@@ -419,6 +419,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="cosmic">
 <h1>Cosmic<a class="headerlink" href="#cosmic" title="Permalink to this heading">#</a></h1>
+<p>The concept of a token as a digital asset reshapes how we engage with access, authority, and opportunity. In this vision, a token becomes not merely a representation of ownership or identity but a key that grants entry into otherwise restricted domains. These domains are guarded by metaphorical gatekeepers, who, in this model, hold god-like power over the thresholds of knowledge, data, and decision-making. The app serves as both the arena and the marketplace for these tokens, creating a dynamic ecosystem where users can explore, learn, and transact within a structured, equitable framework.</p>
+<p>Imagine an app designed to simulate complex medical decision-making, where users input patient data and receive predictive insights. By interacting with this app, they can observe the risks and benefits of particular clinical choices, not just for the patient in question but for a digital twin—a simulated counterpart who does not make the same decision. This contrast allows users to visualize attributable risks, bridging theoretical knowledge with practical implications. The historical and physical inputs transform into actionable insights, providing students, clinicians, and patients with a powerful tool to understand causality and consequence.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ap1DzlbyG00?start=84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="act3/figures/blanche.*"><img alt="act3/figures/blanche.*" src="act3/figures/blanche.*" style="width: 1px; height: 1px;" /></a>
@@ -426,6 +428,8 @@ document.write(`
 <p><span class="caption-number">Fig. 19 </span><span class="caption-text"><em>What Exactly is Identity</em>. A node may represent goats (in general) and another sheep (in general). But the identity of any specific animal (not its species) is a network. For this reason we might have a “black sheep”, distinct in certain ways – perhaps more like a goat than other sheep. But that’s all dull stuff. Mistaken identity is often the fuel of comedy, usually when the adversarial is mistaken for the cooperative or even the transactional.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The app’s structure also caters to deeper exploration through a backend marketplace powered by tokens. For users whose curiosity extends beyond surface-level predictions, tokens grant access to curated databases, each representing a well-guarded repository of data. These databases might belong to researchers operating within Institutional Review Boards (IRBs) or other ethical oversight frameworks. Even for those without direct IRB connections, the app’s token-based economy enables collaboration: users can submit scripts or queries to be executed by guardians of these databases, bridging gaps between individual curiosity and collective expertise. This system democratizes access while respecting the ethical and legal boundaries that govern sensitive data.</p>
+<p>Looking ahead, this marketplace could evolve into a robust API-driven infrastructure. Tokens might then act as gateways to automated interactions, enabling seamless integration between personal research and external datasets. Researchers, educators, and clinicians would not just use the app as a predictive tool but as a collaborative hub, accessing real-time insights, generating new hypotheses, and pushing the boundaries of medical understanding. Through this model, the app doesn’t merely inform; it empowers, creating a shared digital space where tokens unlock opportunities for innovation and growth.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -437,25 +441,25 @@ document.write(`
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 
-<span class="c1"># Define the neural network structure</span>
+<span class="c1"># Define the neural network fractal</span>
 <span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="s1">&#39;World&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Prometheus&#39;</span><span class="p">,</span> <span class="s1">&#39;Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Ends&#39;</span><span class="p">,</span> <span class="p">],</span>
-        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Inherit&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Goat&#39;</span><span class="p">,</span> <span class="s1">&#39;Sheep&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Parasite&#39;</span><span class="p">,</span> <span class="s1">&#39;Mutualist&#39;</span><span class="p">,</span> <span class="s1">&#39;Commensal&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Fire&#39;</span><span class="p">,</span> <span class="s1">&#39;Everlasting&#39;</span><span class="p">,</span>  <span class="s1">&#39;Scapegoat&#39;</span><span class="p">,</span> <span class="s1">&#39;Prepared&#39;</span><span class="p">,</span> <span class="s1">&#39;Kingdom&#39;</span><span class="p">]</span>
+        <span class="s1">&#39;World&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cosmos-Entropy&#39;</span><span class="p">,</span> <span class="s1">&#39;Planet-Tempered&#39;</span><span class="p">,</span> <span class="s1">&#39;Life-Needs&#39;</span><span class="p">,</span> <span class="s1">&#39;Ecosystem-Costs&#39;</span><span class="p">,</span> <span class="s1">&#39;Generative-Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Cartel-Ends&#39;</span><span class="p">,</span> <span class="p">],</span> <span class="c1">## Cosmos, Planet</span>
+        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Perception-Ledger&#39;</span><span class="p">],</span> <span class="c1"># Life</span>
+        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Open-Nomiddle&#39;</span><span class="p">,</span> <span class="s1">&#39;Closed-Trusted&#39;</span><span class="p">],</span> <span class="c1"># Ecosystem (Beyond Principal-Agent-Other)</span>
+        <span class="s1">&#39;Generative&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ratio-Seya&#39;</span><span class="p">,</span> <span class="s1">&#39;Competition-Blockchain&#39;</span><span class="p">,</span> <span class="s1">&#39;Odds-Dons&#39;</span><span class="p">],</span> <span class="c1"># Generative</span>
+        <span class="s1">&#39;Physical&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Volatile-Distributed&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown-Players&#39;</span><span class="p">,</span>  <span class="s1">&#39;Freedom-Crypto&#39;</span><span class="p">,</span> <span class="s1">&#39;Known-Transactions&#39;</span><span class="p">,</span> <span class="s1">&#39;Stable-Central&#39;</span><span class="p">]</span> <span class="c1"># Physical</span>
     <span class="p">}</span>
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">():</span>
     <span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s1">&#39;yellow&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Inherit&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ends&#39;</span><span class="p">,</span> <span class="s1">&#39;Sheep&#39;</span><span class="p">,</span> <span class="s1">&#39;Commensal&#39;</span><span class="p">,</span> <span class="s1">&#39;Kingdom&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Mutualist&#39;</span><span class="p">,</span> <span class="s1">&#39;Prepared&#39;</span><span class="p">,</span> <span class="s1">&#39;Scapegoat&#39;</span><span class="p">,</span> <span class="s1">&#39;Everlasting&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;yellow&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Perception-Ledger&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cartel-Ends&#39;</span><span class="p">,</span> <span class="s1">&#39;Closed-Trusted&#39;</span><span class="p">,</span> <span class="s1">&#39;Odds-Dons&#39;</span><span class="p">,</span> <span class="s1">&#39;Stable-Central&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Generative-Means&#39;</span><span class="p">,</span> <span class="s1">&#39;Competition-Blockchain&#39;</span><span class="p">,</span> <span class="s1">&#39;Known-Transactions&#39;</span><span class="p">,</span> <span class="s1">&#39;Freedom-Crypto&#39;</span><span class="p">,</span> <span class="s1">&#39;Unknown-Players&#39;</span><span class="p">],</span>
         <span class="s1">&#39;lightsalmon&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;Prometheus&#39;</span><span class="p">,</span> <span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Goat&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;Parasite&#39;</span><span class="p">,</span> <span class="s1">&#39;Fire&#39;</span>
+            <span class="s1">&#39;Life-Needs&#39;</span><span class="p">,</span> <span class="s1">&#39;Ecosystem-Costs&#39;</span><span class="p">,</span> <span class="s1">&#39;Open-Nomiddle&#39;</span><span class="p">,</span> <span class="c1"># Ecosystem = Red Queen = Prometheus = Sacrifice</span>
+            <span class="s1">&#39;Ratio-Seya&#39;</span><span class="p">,</span> <span class="s1">&#39;Volatile-Distributed&#39;</span>
         <span class="p">],</span>
     <span class="p">}</span>
     <span class="k">return</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="n">color</span> <span class="k">for</span> <span class="n">color</span><span class="p">,</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="n">color_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">}</span>
@@ -495,7 +499,7 @@ document.write(`
         <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;For I was a Commensal by thy Deeds&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Crypto Inspired App&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -505,7 +509,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/9f83796c46504638d0694b33875395b3438df6a9aefe7ba653643dd7171ae0e2.png" src="../../_images/9f83796c46504638d0694b33875395b3438df6a9aefe7ba653643dd7171ae0e2.png" />
+<img alt="../../_images/9adea31171f8f0426abcea1b850c15f9f145a628045eb668c7076b876c37e517.png" src="../../_images/9adea31171f8f0426abcea1b850c15f9f145a628045eb668c7076b876c37e517.png" />
 </div>
 </div>
 <figure class="align-default" id="id3">
